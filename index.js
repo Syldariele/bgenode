@@ -10,5 +10,10 @@ app.listen(3000, () => {
 app.use(express.static("./public"));
 
 app.get("/get_text", (req, res)=> {
-    res.send("hello world !");
+    res.send({
+        title: "Mon article",
+        content: "le super contenu de mon super article :)",
+        author: "Berengere",
+
+    });
 });
