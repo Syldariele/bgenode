@@ -10,3 +10,7 @@ app.get('/', (req, res) => {
     console.log("acces to / path");
     res.send("hello world");
 });
+
+app.get("/about", (req, res) => {
+    res.send("about");
+});
